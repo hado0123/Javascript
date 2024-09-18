@@ -18,8 +18,11 @@
          document.write('<hr />')
 
          // JSON -> 문자열
-         const jsonToString = JSON.stringify(iPhone15)
-         document.write(jsonToString)
+         const jsonToString1 = JSON.stringify(iPhone15)
+         document.write(jsonToString1)
+
+         const jsonToString2 = JSON.stringify(iPhone15, null, 2)
+         console.log(jsonToString2)
 
          document.write('<hr />')
 
