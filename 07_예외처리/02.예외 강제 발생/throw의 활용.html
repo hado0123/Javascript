@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>예제</title>
    </head>
    <body>
       <script>
@@ -17,9 +17,13 @@
             deposit -= money
          }
 
-         withdrawal(11000)
-
-         console.log(`${deposit}원 남았습니다.`)
+         try {
+            withdrawal(11000)
+            // withdrawal(5000)
+            console.log(`${deposit}원 남았습니다.`)
+         } catch (error) {
+            console.log('에러가 발생했습니다.' + error)
+         }
       </script>
    </body>
 </html>
