@@ -7,10 +7,18 @@
    </head>
    <body>
       <script>
-         // undefined, null, 0, 빈문자열(‘’)을 제외한 모든 것은 True
+         var num1 //undefined: 값이 정의되지 않은 변수
+         var num2 = null //null: 비어 있는 값(값이 없다)
+         console.log('num1:', num1, 'num2:', num2)
+
+         //undefined, null, 빈문자열(''), 0을 제외한 모든것은 true
+         //undefined, null, 빈문자열(''), 0 -> 무조건 false
+         //Boolean() -> 괄호 안에 있는 boolean 타입으로 바꿔준다
 
          console.log(Boolean(undefined))
+         console.log(Boolean(num1))
          console.log(Boolean(null))
+         console.log(Boolean(num2))
 
          console.log('------------')
 
